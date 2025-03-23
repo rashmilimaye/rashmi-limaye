@@ -1,16 +1,10 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si"; // Import Gmail icon
 import logo from "../assets/raviKumarLogo.webp";
 
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between py-6">
-      {/* Logo Section */}
-      <div className="flex flex-shrink-0 items-center">
-        <a href="/" aria-label="Home">
-          <img src={logo} className="mx-2" width={50} height={33} alt="Logo" />
-        </a>
-      </div>
-
       {/* Social Media Section */}
       <div className="m-8 flex items-center gap-4 text-2xl">
         <a
@@ -21,6 +15,7 @@ const Navbar = () => {
         >
           <FaLinkedin />
         </a>
+
         <a
           href="https://github.com/rashmilimaye"
           target="_blank"
@@ -28,6 +23,16 @@ const Navbar = () => {
           aria-label="GitHub"
         >
           <FaGithub />
+        </a>
+
+        {/* Gmail Link */}
+        <a
+          href="mailto:rashmilimaye@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Gmail"
+        >
+          <SiGmail className="text-red-500" />
         </a>
       </div>
     </nav>

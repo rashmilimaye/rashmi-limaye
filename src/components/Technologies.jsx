@@ -1,12 +1,12 @@
-import { BiLogoPostgresql } from "react-icons/bi";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+import { BiLogoPostgresql, BiLogoDjango } from "react-icons/bi";
+import { DiRedis, DiPython } from "react-icons/di";
+import { FaNodeJs, FaReact, FaAngular, FaGithub } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiMongodb, SiExpress, SiCplusplus, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
 
-// Floating icon animation setup
+// Icon Floating Animation Setup
 const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {
@@ -20,6 +20,24 @@ const iconVariants = (duration) => ({
   },
 });
 
+// Tech Stack Array (Cleaner Approach)
+const techStack = [
+  { icon: <FaReact className="text-cyan-400" />, duration: 2.5 },
+  { icon: <TbBrandNextjs />, duration: 3 },
+  { icon: <SiMongodb className="text-green-500" />, duration: 2.8 },
+  { icon: <DiRedis className="text-red-700" />, duration: 2 },
+  { icon: <FaNodeJs className="text-green-500" />, duration: 6 },
+  { icon: <BiLogoPostgresql className="text-sky-700" />, duration: 4 },
+  { icon: <BiLogoDjango className="text-green-700" />, duration: 3.5 },
+  { icon: <DiPython className="text-yellow-400" />, duration: 2.2 },
+  { icon: <SiCplusplus className="text-blue-500" />, duration: 4.5 },
+  { icon: <FaAngular className="text-red-600" />, duration: 3.8 },
+  { icon: <SiExpress className="text-gray-500" />, duration: 3 },
+  { icon: <RiJavascriptFill className="text-yellow-400" />, duration: 2.4 },
+  { icon: <SiTailwindcss className="text-sky-400" />, duration: 3.2 },
+  { icon: <FaGithub className="text-gray-300" />, duration: 3.5 },
+];
+
 const Technologies = () => {
   return (
     <div className="pb-24">
@@ -28,70 +46,26 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 20 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
       >
-        Technologies
+        🚀 Technologies I Work With
       </motion.h2>
 
       {/* Icons Section */}
       <div className="flex flex-wrap justify-center gap-6">
-        {/* React Icon */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(2.5)}
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
-
-        {/* Next.js Icon */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(3)}
-          className="p-4"
-        >
-          <TbBrandNextjs className="text-7xl" />
-        </motion.div>
-
-        {/* MongoDB Icon */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(2.8)}
-        >
-          <SiMongodb className="text-7xl text-cyan-500" />
-        </motion.div>
-
-        {/* Redis Icon */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(2)}
-          className="p-4"
-        >
-          <DiRedis className="text-7xl text-red-700" />
-        </motion.div>
-
-        {/* NodeJS Icon */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(6)}
-          className="p-4"
-        >
-          <FaNodeJs className="text-7xl text-green-500" />
-        </motion.div>
-
-        {/* PostgreSQL Icon */}
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(4)}
-          className="p-4"
-        >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
-        </motion.div>
+        {techStack.map((tech, index) => (
+          <motion.div
+            key={index}
+            initial="initial"
+            animate="animate"
+            variants={iconVariants(tech.duration)}
+            className="p-4 cursor-pointer transition-transform duration-300 hover:scale-125"
+          >
+            <div className="text-7xl shadow-lg hover:drop-shadow-[0_0_12px_rgb(255,255,255,0.8)]">
+              {tech.icon}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

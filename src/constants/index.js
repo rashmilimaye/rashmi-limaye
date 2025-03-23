@@ -1,76 +1,68 @@
+import { address } from "framer-motion/client";
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I'm a dedicated software developer with a strong passion for Full-Stack Development, Machine Learning, Cloud Computing, and Automation. Continuously exploring new technologies, I thrive on building innovative solutions and expanding my skill set to stay ahead in the ever-evolving tech landscape.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "2024 - Present",
+    role: "Project Intern",
+    company: " DASSAULT SYSTÈMES",
+    description: `Successfully achieved the highest accuracy in classifying materials for material handling by 
+integrating YOLO-based object detection with an industrial robot for automated inspection and 
+pick and place operations.`,
+    technologies: ["Industrial Automation", "Object Detection", "Computer Vision", "Machine Learning"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "2024 ",
+    role: "Backend Developer",
+    company: "DIVERGENIC TECH. SOLUTIONS",
+    description: `Designed and developed an efficient server-side logic using Django, ensuring sufficient backend 
+operations and API management.`,
+    technologies: ["Python","Django", "MySQL", "Postman","REST Framework"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "2023 - 2025",
+    role: "Head of Social Media & Marketing",
+    company: "INFORMATION TECHNOLOGY STUDENTS' ASSOCIATION (ITSA)",
+    description: `Led the social media and marketing team, developing and executing strategic campaigns to boost engagement, expand audience reach, and enhance brand visibility. Oversaw content creation, analytics tracking, and platform management, ensuring consistent messaging and data-driven improvements across multiple channels.`,
+    technologies: ["MS Excel"],
   },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "INTEGRATED ROBOTIC SYSTEM FOR SMART MATERIAL HANDLING AND INSPECTION (DASSAULT SYSTÈMES)",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Designed a vision based robotic system using YOLO and OpenCV to classify objects in real time, ensuring efficient material handling.",
+    technologies: ["Computer Vision", "Machine Learning", "CNNs", "Robot Operating System"],
   },
   {
-    title: "Task Management App",
+    title: "DATA MANAGEMENT SYSTEM USING DJANGO ",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      "Developed an efficient logic for API design, testing, and debugging using the Django REST framework, enhancing system reliability and performance.",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
   {
-    title: "Portfolio Website",
+    title: "PORTFOLIO WEBSITE",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Developed & deployed a personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
   },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
+  
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Pune, India",
+   phoneNo: "rashmi.limaye221@gmail.com",
+   email: "rashmi.limaye221@gmail.com"
 };
