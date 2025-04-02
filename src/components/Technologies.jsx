@@ -23,14 +23,16 @@ const iconVariants = (duration) => ({
 // Tech Stack Array (Cleaner Approach)
 const techStack = [
   { icon: <FaReact className="text-cyan-400" />, duration: 2.5 },
-  { icon: <TbBrandNextjs />, duration: 3 },
+  //{ icon: <TbBrandNextjs />, duration: 3 },
   { icon: <SiMongodb className="text-green-500" />, duration: 2.8 },
-  { icon: <DiRedis className="text-red-700" />, duration: 2 },
-  { icon: <FaNodeJs className="text-green-500" />, duration: 6 },
-  { icon: <BiLogoPostgresql className="text-sky-700" />, duration: 4 },
-  { icon: <BiLogoDjango className="text-green-700" />, duration: 3.5 },
-  { icon: <DiPython className="text-yellow-400" />, duration: 2.2 },
   { icon: <SiCplusplus className="text-blue-500" />, duration: 4.5 },
+  // { icon: <DiRedis className="text-red-700" />, duration: 2 },
+  { icon: <FaNodeJs className="text-green-500" />, duration: 6 },
+  //{ icon: <BiLogoPostgresql className="text-sky-700" />, duration: 4 },
+  { icon: <DiPython className="text-yellow-400" />, duration: 2.2 },
+  { icon: <BiLogoDjango className="text-green-700" />, duration: 3.5 },
+  
+ 
   { icon: <FaAngular className="text-red-600" />, duration: 3.8 },
   { icon: <SiExpress className="text-gray-500" />, duration: 3 },
   { icon: <RiJavascriptFill className="text-yellow-400" />, duration: 2.4 },

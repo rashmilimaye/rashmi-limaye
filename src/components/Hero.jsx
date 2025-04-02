@@ -106,7 +106,7 @@ const Hero = () => {
               variants={childVariants}
               className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl font-semibold tracking-tight text-transparent"
             >
-              Software Developer | Innovator
+              Software Developer 
             </motion.span>
 
             <motion.p
