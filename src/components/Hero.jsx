@@ -119,7 +119,7 @@ const Hero = () => {
             {/* View Resume Button */}
             <motion.a
               variants={childVariants}
-              href="/resume rashmilimaye.pdf"
+              href="/rashmilimaye-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-stone-300 to-stone-500 rounded-full p-4 text-sm text-stone-800 mb-10 hover:shadow-lg hover:scale-105 transition-transform duration-300"
